@@ -4,7 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="https://mgx-backend-cdn.metadl.com/generate/images/870663/2025-12-29/b8745e22-fe62-451a-bd82-34823c597ef5.png" type="image/png">
+  
+  <!-- PWA Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="TermoStick">
+  <meta name="application-name" content="TermoStick">
+  <meta name="theme-color" content="#FF6B35">
+  <meta name="msapplication-TileColor" content="#FF6B35">
+  <meta name="msapplication-navbutton-color" content="#FF6B35">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-128.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
   <title>TermoStick - Профессиональные термостикеры для бизнеса</title>
   <meta name="description" content="Профессиональные DTF термостикеры, виниловые наклейки, UV DTF и 3D печать. Быстрое производство, оптовые цены, доставка по Узбекистану." />
   <meta name="author" content="TermoStick" />
@@ -13,13 +38,28 @@
   <meta property="og:title" content="TermoStick - Профессиональные термостикеры" />
   <meta property="og:description" content="DTF, Vinyl, UV DTF и 3D печать высокого качества для бизнеса и творчества" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://mgx-backend-cdn.metadl.com/generate/images/870663/2025-12-29/b8745e22-fe62-451a-bd82-34823c597ef5.png" />
+  <meta property="og:image" content="/icons/icon-512.png" />
 
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registered successfully:', registration.scope);
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
 </body>
 
 </html>

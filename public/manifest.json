@@ -1,0 +1,118 @@
+{
+  "name": "TermoStick - Термотрансферы и Виниловые Наклейки",
+  "short_name": "TermoStick",
+  "description": "Маркетплейс для заказа термотрансферов, виниловых наклеек и печати по технологиям DTF, UV DTF, 3D Vinyl. Профессиональное оборудование и качественные материалы.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#FF6B35",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["business", "shopping", "productivity"],
+  "icons": [
+    {
+      "src": "/images/Icons.jpg",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icons.jpg",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icons.jpg",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icon.jpg",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icon.jpg",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icon.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/Icon.jpg",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/Icon.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/HomeScreenshot.jpg",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/Catalog.jpg",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Каталог",
+      "short_name": "Каталог",
+      "description": "Просмотр каталога продукции",
+      "url": "/catalog",
+      "icons": [
+        {
+          "src": "/images/Icon.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Калькулятор",
+      "short_name": "Калькулятор",
+      "description": "Расчет стоимости заказа",
+      "url": "/calculator",
+      "icons": [
+        {
+          "src": "/images/Icon.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Корзина",
+      "short_name": "Корзина",
+      "description": "Просмотр корзины покупок",
+      "url": "/cart",
+      "icons": [
+        {
+          "src": "/images/Icon.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
